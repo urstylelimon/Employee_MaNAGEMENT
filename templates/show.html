@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    <h1>This is Employee details page</h1>
+    <table>
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Depertment</th>
+            <th>Salary</th>
+            <th>Bonous</th>
+            <th>Job Rule</th>
+            <th>Contact Number</th>
+            <th>Joining Date</th>
+        </tr>
+        {% for emps in emp %}
+        <tr>
+            <td>{{emps.first_name}}</td>
+            <td>{{emps.last_name}}</td>
+            <td>{{emps.dept}}</td>
+            <td>{{emps.salaray}}</td>
+            <td>{{emps.bonus}}</td>
+            <td>{{emps.role}}</td>
+            <td>{{emps.phone}}</td>
+            <td>{{emps.hire_date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
